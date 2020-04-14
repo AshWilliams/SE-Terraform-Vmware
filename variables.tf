@@ -2,6 +2,7 @@
 # - Describes virtual machine / guest options
 variable "provider_vsphere_host" {
   description = "vCenter server FQDN or IP - Example: vcsa01-z67.sddc.lab"
+  default = ""
 }
 
 variable "provider_vsphere_user" {
@@ -11,6 +12,7 @@ variable "provider_vsphere_user" {
 
 variable "provider_vsphere_password" {
   description = "vSphere password"
+  default = ""
 }
 
 ##### Infrastructure
@@ -18,14 +20,17 @@ variable "provider_vsphere_password" {
 
 variable "deploy_vsphere_datacenter" {
   description = "vSphere datacenter in which the virtual machine will be deployed."
+  default = ""
 }
 
 variable "deploy_vsphere_cluster" {
   description = "vSphere cluster in which the virtual machine will be deployed."
+  default = ""
 }
 
 variable "deploy_vsphere_datastore" {
   description = "Datastore in which the virtual machine will be deployed."
+  default = ""
 }
 
 variable "deploy_vsphere_folder" {
@@ -34,6 +39,7 @@ variable "deploy_vsphere_folder" {
 
 variable "deploy_vsphere_network" {
   description = "Porgroup to which the virtual machine will be connected."
+  default = ""
 }
 
 ##### Guest
