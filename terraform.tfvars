@@ -1,5 +1,5 @@
 # Provider
-provider_vsphere_host = "vcsa01-z67.sddc.lab"
+provider_vsphere_host = "vcsa01-z67.co"
 provider_vsphere_user = "administrator@vsphere.local"
 provider_vsphere_password = "VMware1!"
 
